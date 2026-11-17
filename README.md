@@ -34,12 +34,12 @@ Workflow:
 
 ## Model config
 
-All bots run on Hermes's default model config (`accounts/fireworks/models/kimi-k2p6` via Fireworks). No bot is pinned to a local or custom provider.
+All bots are LLM-agnostic — no model, provider, or base URL is hardcoded. Each bot inherits whatever Hermes has configured at runtime. Set the model once in Hermes (`hermes model <name>`) and every bot uses it.
 
 ```
-model.default: accounts/fireworks/models/kimi-k2p6
-model.provider: fireworks
-model.base_url: https://api.fireworks.ai/inference/v1
+# model.default: <commented out>   # inherit from active Hermes config
+# model.provider: <commented out>   # inherit from active Hermes config
+# model.base_url: <commented out>   # inherit from active Hermes config
 ```
 
 ## Repo layout

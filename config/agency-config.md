@@ -1,16 +1,23 @@
 # Agensi model/provider configuration
 
-All bots run on Hermes's default model config — Fireworks `kimi-k2p6`. None are pinned to the local FCC launcher or any custom provider.
+## LLM-agnostic by design
 
-## Per-bot config
-
-Each profile at `~/.hermes/profiles/<bot-name>/config.yaml` has:
+No bot pins a specific model, provider, or base URL. Each bot inherits whatever LLM Hermes has configured at runtime — no cloud model is hardcoded, no provider is forced.
 
 ```
-model:
-  default: "accounts/fireworks/models/kimi-k2p6"
-  provider: "fireworks"
-  base_url: "https://api.fireworks.ai/inference/v1"
+# model.default: <commented out>   # inherit from active Hermes config
+# model.provider: <commented out>   # inherit from active Hermes config
+# model.base_url: <commented out>   # inherit from active Hermes config
+```
+
+To change the LLM for all bots at once, set it in Hermes's active config:
+```
+hermes model <model-name>
+```
+
+Or per-bot:
+```
+hermes -p <bot-name> model <model-name>
 ```
 
 ## Bots covered
@@ -30,5 +37,3 @@ model:
 - critic
 - scribe
 - researcher
-
-To change a bot's model: `hermes -p <bot-name> model <model>` or edit its `config.yaml` `model:` block directly.
