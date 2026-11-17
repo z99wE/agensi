@@ -6,6 +6,8 @@ A fleet of Hermes Agent bots that debate, direct, edit, curate, and publish soci
 
 | Bot | Role | Stack |
 |-----|------|-------|
+| `independent-filmmaker` | Independent filmmaker | OpenMotion reference-video recreation, Motion.md, brand kits |
+| `lazy-filmmaker` | Lazy one-click filmmaker | MoneyPrinterTurbo topic/keyword → HD short video |
 | `creative-strategist` | Agency lead / debate chair | Remocn, Ultrademo, AiEmcee |
 | `scripter` | Scripts + narration.json + storyboard.json | AiEmcee, aidemo, Ultrademo |
 | `director-1` | Animation director | Remotion + Remocn |

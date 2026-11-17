@@ -15,6 +15,8 @@ model:
 
 ## Bots covered
 
+- independent-filmmaker
+- lazy-filmmaker
 - creative-strategist
 - scripter
 - director-1
