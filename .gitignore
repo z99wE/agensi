@@ -1,0 +1,16 @@
+.DS_Store
+*.mp4
+*.mov
+*.gif
+*.srt
+*.vtt
+.env
+node_modules/
+dist/
+out/
+render-stills/
+footage/
+final/
+review/
+publish/
+*.log
